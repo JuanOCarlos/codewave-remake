@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: local
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  datasource:
+    url: jdbc:postgresql://localhost:5432/codewave-remake
+    username: postgres
+    password: jucaprevost21112004
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: suportecodewave@gmail.com
+    password: mhlrnhukkrfcsoxp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
